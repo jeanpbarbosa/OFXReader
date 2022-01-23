@@ -15,6 +15,9 @@ foreach ($directory as $fileinfo) {
   }
 }
 
+// Excluir arquivo convertido
+unlink("OFXConverted.csv");
+
 //Msgm Fim
 echo json_encode(array(
   "status_tipo" => "OK",

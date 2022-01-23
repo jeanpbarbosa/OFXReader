@@ -27,7 +27,7 @@ foreach ($directory as $fileinfo) {
 // Verifica se tem arquivos na pasta
 if ($fileCountQtd < 1) {
   echo json_encode(array(
-    "status_tipo" => "OK",
+    "status_tipo" => "NOK",
     "status_msg" => "No files found in folder."
   ), JSON_UNESCAPED_UNICODE);
   exit;
